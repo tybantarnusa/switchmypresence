@@ -8,15 +8,18 @@ class Games:
         pass
 
     def get_list(self):
-        load_dotenv()
+        json_file = None
 
-        env = os.environ.get("ENV")
-
-        json_path = 'gamelist.json'
-        if env == 'development':
-           json_path = os.path.join(os.path.dirname(__file__), '../assets/' + json_path)
-
-        json_file = open(json_path)
+        try:
+            json_path = 'gamelist.json'
+            json_file = open(json_path)
+        except:
+            try:
+                json_path = os.path.join(os.path.dirname(__file__), '../assets/' + json_path)
+                json_file = open(json_path)
+            except Exception as e:
+                raise e
+                
         game_data = json.load(json_file)
 
         return sorted(game_data['games'], key=itemgetter('title'))

@@ -11,8 +11,8 @@ class MainWindow(Frame):
 
         # Instance variables
         self.launched = False
-        self.game_data = games.instance.get_list()
         self.selected_game = None
+        self.discord = None
 
         # Build GUI
         Frame.__init__(self, master)
@@ -21,17 +21,34 @@ class MainWindow(Frame):
         self.master.minsize(width=600, height=100)
         self.master.resizable(False, False)
 
-        self.create_header()
-        self.create_content()
-
         self.pack(fill='both')
+
+        self.create_header()
+        
+        try:
+            self.game_data = games.instance.get_list()
+        except:
+            messagebox.showerror('Error', 'File gamelist.json is not found. Game list will be empty.')
+            self.game_data = []
+
+        self.create_content()
 
     def create_header(self):
         frame = Frame(self, borderwidth=0)
         frame.pack(fill='x', side='top')
 
-        banner_path = os.path.join(os.path.dirname(__file__), '../assets/banner.jpg')
-        img = Image.open(banner_path)
+        img = None
+
+        try:
+            img = Image.open("assets/banner.jpg")
+        except:
+            try:
+                banner_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../assets/banner.jpg')
+                img = Image.open(banner_path)
+            except:
+                messagebox.showerror('Error', 'App is broken. Banner not found.')
+                return
+
         img.thumbnail((600,600), Image.ANTIALIAS)
         render = ImageTk.PhotoImage(img)
 
@@ -104,8 +121,8 @@ class MainWindow(Frame):
         self.launch_button = Button(label_frame, text='Launch', command=self.handle_launch)
         self.launch_button.grid(row=0, column=0, sticky='nesw')
 
-        stop_button = Button(label_frame, text='Stop', command=self.handle_stop)
-        stop_button.grid(row=0, column=1, sticky='nesw')
+        self.stop_button = Button(label_frame, text='Stop', command=self.handle_stop, state='disabled')
+        self.stop_button.grid(row=0, column=1, sticky='nesw')
 
     def create_status_indicator(self, root):
         label_frame = LabelFrame(root, text='Status', pady=5)
@@ -148,7 +165,7 @@ class MainWindow(Frame):
     def handle_launch_exec(self):
         name_method = self.name_method.get()
 
-        if self.launched:
+        if self.launched and self.discord != None:
             self.discord.stop()
 
         title = self.custom_game_title.get()
@@ -156,11 +173,17 @@ class MainWindow(Frame):
         if name_method == 1:
             image = self.selected_game['image']
 
-        self.discord = Discord(title, image)
-        self.discord.present()
-        self.status_message.config(text='⬤ Active', foreground='green')
-
-        self.launched = True
+        try:
+            self.discord = Discord(title, image)
+            self.discord.present()
+            self.status_message.config(text='⬤ Active', foreground='green')
+ 
+            self.stop_button.config(state='normal')
+            self.launched = True
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
+            self.status_message.config(text='⬤ Inactive', foreground='red')
+            self.discord = None
 
     def handle_stop(self):
         if not self.launched:
@@ -169,4 +192,5 @@ class MainWindow(Frame):
         messagebox.showinfo("Stopping...", "Your presence is being stopped. It might take a little time to actually disappear from your Discord.")
         self.discord.stop()
         self.launched = False
+        self.stop_button.config(state='disabled')
         self.status_message.config(text='⬤ Inactive', foreground='red')

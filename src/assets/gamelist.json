@@ -37,10 +37,6 @@
             "image": "pokeeevee"
         },
         {
-            "title": "Pokemon: Let's Go, Eevee!",
-            "image": "pokeeevee"
-        },
-        {
             "title": "Splatoon 2",
             "image": "splatoon2"
         },
@@ -91,6 +87,98 @@
         {
             "title": "Clubhouse Games: 51 Worldwide Classics",
             "image": "clubhouse51"
+        },
+        {
+            "title": "Paper Mario: The Origami King",
+            "image": "papermarioorigami"
+        },
+        {
+            "title": "Mario Tennis Aces",
+            "image": "mariotennisaces"
+        },
+        {
+            "title": "Kirby Star Allies",
+            "image": "kirbysa"
+        },
+        {
+            "title": "Fire Emblem: Three Houses",
+            "image": "fe3h"
+        },
+        {
+            "title": "Donkey Kong Country: Tropical Freeze",
+            "image": "dkctf"
+        },
+        {
+            "title": "Arms",
+            "image": "arms"
+        },
+        {
+            "title": "Minecraft",
+            "image": "minecraft"
+        },
+        {
+            "title": "Pikmin 3 Deluxe",
+            "image": "pikmin3dx"
+        },
+        {
+            "title": "Mario + Rabbids Kingdom Battle",
+            "image": "mariorabbids"
+        },
+        {
+            "title": "Xenoblade Chronicles 2",
+            "image": "xeno2"
+        },
+        {
+            "title": "Yoshi's Crafted World",
+            "image": "yoshicraft"
+        },
+        {
+            "title": "Xenoblade Chronicles: Definitive Edition",
+            "image": "xenoch"
+        },
+        {
+            "title": "Octopath Traveler",
+            "image": "octopath"
+        },
+        {
+            "title": "Captain Toad: Treasure Tracker",
+            "image": "toadtt"
+        },
+        {
+            "title": "Nintendo Labo Toy-Con 01: Variety Kit",
+            "image": "labo01"
+        },
+        {
+            "title": "Mario Kart Live: Home Circuit",
+            "image": "mariokartlive"
+        },
+        {
+            "title": "Pokemon Mystery Dungeon: Rescue Team DX",
+            "image": "pmdrt"
+        },
+        {
+            "title": "Pokken Tournament DX",
+            "image": "pokkendx"
+        },
+        {
+            "title": "Astral Chain",
+            "image": "astralchain"
+        },
+        {
+            "title": "Marvel Ultimate Alliance 3: The Black Order",
+            "image": "marvel3"
+        },
+        {
+            "title": "Enter the Gungeon",
+            "image": "gungeon"
+        },
+        {
+            "title": "Fitness Boxing",
+            "image": "fitnessbox"
+        },
+        {
+            "title": "Taiko no Tatsujin: Drum 'n' Fun!",
+            "image": "taikodrumfun"
         },
         {
             "title": "Bravely Default II",
