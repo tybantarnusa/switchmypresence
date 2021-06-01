@@ -16,12 +16,8 @@ class Discord:
 
     def present(self):
         self.RPC.connect()
-        
         start_time = int(time.time())
-        
         self.RPC.update(state=self.state, large_image=self.large_image, large_text=self.large_text, start=start_time)
-        while True:
-            time.sleep(15)
     
     def stop(self):
         self.RPC.clear()

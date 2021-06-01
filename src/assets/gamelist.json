@@ -1,0 +1,104 @@
+{
+    "games": [
+        {
+            "title": "Mario Kart 8 Deluxe",
+            "image": "mariokart8"
+        },
+        {
+            "title": "Animal Crossing: New Horizons",
+            "image": "acnh"
+        },
+        {
+            "title": "Super Smash Bros. Ultimate",
+            "image": "ssbu"
+        },
+        {
+            "title": "The Legend of Zelda: Breath of the Wild",
+            "image": "zeldabotw"
+        },
+        {
+            "title": "Pokemon Sword",
+            "image": "pokesword"
+        },
+        {
+            "title": "Pokemon Shield",
+            "image": "pokeshield"
+        },
+        {
+            "title": "Super Mario Odyssey",
+            "image": "marioodyssey"
+        },
+        {
+            "title": "Pokemon: Let's Go, Pikachu!",
+            "image": "pokepika"
+        },
+        {
+            "title": "Pokemon: Let's Go, Eevee!",
+            "image": "pokeeevee"
+        },
+        {
+            "title": "Pokemon: Let's Go, Eevee!",
+            "image": "pokeeevee"
+        },
+        {
+            "title": "Splatoon 2",
+            "image": "splatoon2"
+        },
+        {
+            "title": "New Super Mario Bros. U Deluxe",
+            "image": "mariou"
+        },
+        {
+            "title": "Ring Fit Adventure",
+            "image": "rfa"
+        },
+        {
+            "title": "Luigi's Mansion 3",
+            "image": "luigi3"
+        },
+        {
+            "title": "Super Mario 3D All-Stars",
+            "image": "marioallstars"
+        },
+        {
+            "title": "Super Mario Maker 2",
+            "image": "mariomaker2"
+        },
+        {
+            "title": "Monster Hunter Rise",
+            "image": "mhrise"
+        },
+        {
+            "title": "Super Mario 3D World + Bowser's Fury",
+            "image": "mario3dworld"
+        },
+        {
+            "title": "The Legend of Zelda: Link's Awakening",
+            "image": "zeldala"
+        },
+        {
+            "title": "Hyrule Warriors: Age of Calamity",
+            "image": "hyruleaoc"
+        },
+        {
+            "title": "Among Us",
+            "image": "amogus"
+        },
+        {
+            "title": "1-2-Switch",
+            "image": "12switch"
+        },
+        {
+            "title": "Clubhouse Games: 51 Worldwide Classics",
+            "image": "clubhouse51"
+        },
+        {
+            "title": "Bravely Default II",
+            "image": "bd2"
+        },
+        {
+            "title": "New Pokemon Snap",
+            "image": "pokesnap"
+        }
+    ]
+}

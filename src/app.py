@@ -1,12 +1,8 @@
-from logic.discord import Discord
+from aesthetic.main_window import MainWindow
 
 def main():
-
-    game = "Bravely Default II"
-    image = "bd2"
-
-    discord = Discord(game, image)
-    discord.present()
+    app = MainWindow()
+    app.mainloop()
 
 if __name__ == '__main__':
     main()
