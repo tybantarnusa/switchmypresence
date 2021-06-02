@@ -145,14 +145,6 @@
             "image": "toadtt"
         },
         {
-            "title": "Nintendo Labo Toy-Con 01: Variety Kit",
-            "image": "labo01"
-        },
-        {
-            "title": "Mario Kart Live: Home Circuit",
-            "image": "mariokartlive"
-        },
-        {
             "title": "Pokemon Mystery Dungeon: Rescue Team DX",
             "image": "pmdrt"
         },
@@ -187,6 +179,50 @@
         {
             "title": "New Pokemon Snap",
             "image": "pokesnap"
+        },
+        {
+            "title": "Divinity: Original Sin II - Definitive Edition",
+            "image": "divinity2"
+        },
+        {
+            "title": "Hades",
+            "image": "hades"
+        },
+        {
+            "title": "Ori and the Will of the Wisps",
+            "image": "oriwill"
+        },
+        {
+            "title": "Celeste",
+            "image": "celeste"
+        },
+        {
+            "title": "Bayonetta",
+            "image": "bayonetta"
+        },
+        {
+            "title": "Bayonetta 2",
+            "image": "bayonetta2"
+        },
+        {
+            "title": "Bayonetta 2",
+            "image": "bayonetta2"
+        },
+        {
+            "title": "Dragon Quest XI S: Echoes of an Elusive Age",
+            "image": "dq11s"
+        },
+        {
+            "title": "Nintendo Entertainment System",
+            "image": "nes"
+        },
+        {
+            "title": "Super Nintendo Entertainment System",
+            "image": "snes"
+        },
+        {
+            "title": "Miitopia",
+            "image": "miitopia"
         }
     ]
 }
