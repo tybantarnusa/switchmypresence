@@ -219,6 +219,14 @@
         {
             "title": "Miitopia",
             "image": "miitopia"
+        },
+        {
+            "title": "Apex Legends",
+            "image": "apex"
+        },
+        {
+            "title": "Fortnite",
+            "image": "fortnite"
         }
     ]
 }
