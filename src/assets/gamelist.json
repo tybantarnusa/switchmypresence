@@ -227,6 +227,18 @@
         {
             "title": "Fortnite",
             "image": "fortnite"
+        },
+        {
+            "title": "Final Fantasy IX",
+            "image": "ff9"
+        },
+        {
+            "title": "Pokemon Brilliant Diamond",
+            "image": "pokebd"
+        },
+        {
+            "title": "Pokemon Shining Pearl",
+            "image": "pokesp"
         }
     ]
 }

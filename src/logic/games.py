@@ -1,7 +1,8 @@
-from dotenv import load_dotenv
 from operator import itemgetter
+from logic import util
 import os
 import json
+
 
 class Games:
     def __init__(self):
@@ -11,11 +12,11 @@ class Games:
         json_file = None
 
         try:
-            json_path = 'gamelist.json'
+            json_path = util.resource_path('gamelist.json')
             json_file = open(json_path)
         except:
             try:
-                json_path = os.path.join(os.path.dirname(__file__), '../assets/' + json_path)
+                json_path = util.resource_path('../assets/gamelist.json')
                 json_file = open(json_path)
             except Exception as e:
                 raise e

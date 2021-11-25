@@ -1,6 +1,6 @@
 from PIL import Image, ImageTk
 from tkinter import Button, Entry, Frame, Label, LabelFrame, Listbox, messagebox, Radiobutton, Scrollbar, IntVar, StringVar
-from logic import games
+from logic import games, util
 from logic.discord import Discord
 import os.path
 
@@ -40,10 +40,11 @@ class MainWindow(Frame):
         img = None
 
         try:
-            img = Image.open("assets/banner.jpg")
+            banner_path = util.resource_path('assets/banner.jpg')
+            img = Image.open(banner_path)
         except:
             try:
-                banner_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../assets/banner.jpg')
+                banner_path = util.resource_path('../assets/banner.jpg')
                 img = Image.open(banner_path)
             except:
                 messagebox.showerror('Error', 'App is broken. Banner not found.')
