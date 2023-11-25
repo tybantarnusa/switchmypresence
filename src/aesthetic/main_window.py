@@ -50,7 +50,7 @@ class MainWindow(Frame):
                 messagebox.showerror('Error', 'App is broken. Banner not found.')
                 return
 
-        img.thumbnail((600,600), Image.ANTIALIAS)
+        img.thumbnail((600,600), Image.LANCZOS)
         render = ImageTk.PhotoImage(img)
 
         banner = Label(frame, image=render, borderwidth=0)

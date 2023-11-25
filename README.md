@@ -33,7 +33,8 @@ Please install all the requirements before proceeding into the next steps.
 ### Steps
 1. Clone and get into the directory:
     ```{bash}
-    git clone https://github.com/tybantarnusa/switchmypresence.git && cd switchmypresence
+    git clone https://github.com/tybantarnusa/switchmypresence.git
+    cd switchmypresence
     ```
 
 2. Install dependencies:
@@ -41,13 +42,7 @@ Please install all the requirements before proceeding into the next steps.
     py -m pip install -r requirements.txt
     ```
 
-3. Create .env file and fill in your [Discord app](https://discord.com/developers/applications) client ID:
-    ```{bash}
-    cp .env.example .env
-    ```
-    Using your own client ID will not show the game image on Discord presence. You can upload your own image on your Discord developer Rich Presence Art Assets page and follow the image naming on [gamelist.json](https://github.com/tybantarnusa/switchmypresence/blob/master/src/assets/gamelist.json).
-
-4. Run the code:
+3. Run the code:
     ```
     py src/app.py
     ```
